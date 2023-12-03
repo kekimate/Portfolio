@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="script.js"></script>-->
+    <script src="https://kit.fontawesome.com/aff9b30797.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Kezdőlap</a></li>
+                    <li><a href="#about">Rólam</a></li>
+                    <li><a href="#services">Szolgáltatásaim</a></li>
+                    <li><a href="#portfolio">Munkáim</a></li>
+                    <li><a href="#contact">Elérhetőség</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Szoftverfejlesztő és tesztelő</p>
+                <h1>Helló<br>a nevem <span>Kéki Máté</span></h1>
+            </div>
+        </div>
+</div>
+<!--rólam-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+             <div class="about-col-1">
+                <img src="images/user.png" alt="">
+             </div>
+             <div class="about-col-2">
+                <h1 class="sub-title">Rólam</h1>
+                <p>Már gyermekként elvarázsolt az informatika világa, és ez az érdeklődés csak erősödött az évek során. Az interaktív játékok, programok és az informatikai eszközök már kiskoromban lekötötték a figyelmemet, és ez a vonzalom később meghatározta a továbbtanulási irányomat. Az informatika nem csak egy szakma, hanem egy szenvedély, amely inspirál és motivál minden nap.</p>
+             
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Készségek</p>
+                    <p class="tab-links" onclick="opentab('experience')">Tapasztalat</p>
+                    <p class="tab-links" onclick="opentab('education')">Tanulmányok</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Desktop Development</span><br>Asztali alkalmazások készítése</li>
+                        <li><span>Web Development</span><br>Web appok készítése</li>
+                        <li><span>App Development</span><br>Android/IOS appok készítése</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2018</span><br>Tanulmányok</li>
+                        <li><span>2023</span><br>Whizystems diákmunka</li>
+                        <li><span>2023-</span><br>Tanulmányok</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Szegedi SZC Vasvári Pál Gazdasági és Informatikai Technikum</li>
+                        <li><span>2022</span><br>Szakmai tanulmányok</li>
+                        <li><span>2024</span><br>Szegedi Tudományegyetem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--szolgáltatások-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Szolgáltatásaim</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Célom, hogy olyan webes projekteken dolgozzak, amelyek nemcsak esztétikusak, de értéket is hoznak a felhasználók életébe. Minden tervezési döntésemet a funkcionalitás és a felhasználói élmény javításának szellemében hozom meg.</p>
+                <a href="#">Tovább</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Desktop Development</h2>
+                <p>A számítógépes fejlesztés számomra nem csak a kódok és algoritmusok megértését jelenti, hanem egy olyan kreatív folyamatot is, ahol a szoftverek segítségével valós problémákra keresünk megoldásokat. A képesség, hogy egy ötletet valós, működő programmá alakítsak, mindig is lelkesedést váltott ki belőlem.</p>
+                <a href="#">Tovább</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Minden ikon, elrendezés és interakció olyan módon van kialakítva, hogy a felhasználó könnyedén és élvezettel használhassa az alkalmazást. Az alkalmazásdesign nem csak arról szól, hogy egy esztétikus külsőt alkossunk, hanem az élményt, amelyet az alkalmazás használata nyújt.</p>
+                <a href="#">Tovább</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Munkáim</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Desktop App</h3>
+                    <p>Asztali alkalmazások készítése</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Weblap</h3>
+                    <p>Reszponzív weblapok készítése</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Telefonos app</h3>
+                    <p>Felhasználóbarát telefonos appok készítése</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Több</a>
+    </div>
+</div>
+<!---elérhetőség-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Elérhetőség</h1>
+                <p><i class="fas fa-paper-plane"></i>kekimate100@gmail.com.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+36 20 912 4515</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Kéki_Máté_CV.docx" download class="btn btn2">CV Letöltése</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Név" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Üzenet"></textarea>
+                    <button type="submit" class="btn btn2">Elküld</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kéki Máté</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+</script>
+</body>
+</html>
